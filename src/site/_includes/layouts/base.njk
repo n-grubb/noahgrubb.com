@@ -1,0 +1,42 @@
+<html lang="en"> 
+<head>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title> 
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto&display=swap" rel="stylesheet"> 
+    <style>{% include "css/main.css" %}</style>
+</head> 
+<body>  
+
+    <header id="site-header">
+
+        <a href="/" class="branding" title="Home">n_</a>
+
+        <nav id="site-nav">
+            <ul>
+                <li>
+                    <a href="/about">about</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+
+        <aside class="intro"></aside>
+        
+        {{ content | safe }}
+
+    </main>
+
+    <footer id="site-footer">
+        <div class="copyright">
+            &copy;2019 noahgrubb.com
+        </div>
+        <div class="syndication">
+            <a href="/feed.xml" aria-label="RSS feed"><abbr title="Really Simple Syndication">RSS</abbr></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+
+<ul class="post-list">
+    {%- for post in collections.post -%}
+    <li class="post">
+        <time class="post-date" datetime="{{ post.date }}">{{ post.date | dateDisplay }}</time>
+        <a href="{{ post.url }}">
+            <h2 class="post-title" >{{ post.data.title }}</h2>
+        </a>
+        <div class="post-excerpt">
+            {{ post.data.excerpt }}
+        </div>
+    </li>
+    {%- endfor -%}
+</ul>
+
