@@ -6,7 +6,7 @@ layout: layouts/base.njk
     {%- for post in collections.post -%}
     <li class="post">
         <time class="post-date" datetime="{{ post.date }}">{{ post.date | dateDisplay }}</time>
-        <a href="{{ post.url }}">
+        <a class="post-link" href="{{ post.url }}">
             <h2 class="post-title" >{{ post.data.title }}</h2>
         </a>
         <div class="post-excerpt">
