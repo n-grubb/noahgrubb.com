@@ -10,7 +10,7 @@ layout: layouts/base.njk
             <h2 class="post-title" >{{ post.data.title }}</h2>
         </a>
         <div class="post-excerpt">
-            {{ post.data.excerpt }}
+            {%- if post.data.excerpt -%}{{ post.data.excerpt }}{%- else -%}{{ post.data.content | safe }}{%- endif -%}
         </div>
     </li>
     {%- endfor -%}

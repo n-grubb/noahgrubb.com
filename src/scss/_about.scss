@@ -1,0 +1,51 @@
+@keyframes bounce_content {
+    0% {
+        transform: translate(-10%,-100%) skewY(-2deg);
+    }
+    40% {
+        // transform: translate(0,0) skewY(-2deg);
+        transform: skewY(-3deg);
+    }
+    60% {
+        transform: skewY(2.5deg);
+    }
+    80% {
+        transform: skewY(-2deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+#about-me {
+    margin-top: 1rem;
+    position: relative;
+    animation: bounce_content 1s 1;
+
+    display: grid; 
+    grid-template: auto / 1fr 1fr;
+
+    .u-photo {
+        grid-column: 1;
+        border-radius: 4px;
+    }
+    
+    .intro {
+        grid-column: 2;
+        margin-left: 1rem;
+    }
+    
+    .details {
+        grid-column: 1 / span 2;
+    }
+
+    hgroup {
+        margin-bottom: .75rem;
+    }
+
+    p, li {
+        font-size: .85em;
+    }
+
+}
+

@@ -1,5 +1,4 @@
 ---
-title: Noah Grubb
-subtitle: my thoughts and ramblings on the state of the web.
+title: Home
 layout: layouts/archive.njk
 ---

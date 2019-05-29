@@ -1,0 +1,91 @@
+html {
+    font-family: $serif;
+    font-size: 20px;
+    color: $text;
+}
+
+body {
+    background-color: $page-bg;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    color: $bold;
+}
+
+p {
+    color: $text;
+    font-family: $serif;
+    line-height: 1.25;   
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: $bold;
+}
+
+a {    
+    color: $bold;
+    text-decoration: none;
+    outline: 0;
+    padding: 0 .1em;
+    margin-left: -.1em;
+    margin-right: -.1em;
+
+    &:visited, &:active {
+        text-decoration: none;
+        color: $bold;
+    }
+
+    &:hover {
+        // todo: highlight/brushstroke animation, highlight left-to-right, uneven bg, randomize
+        color: white;
+        background-color: $primary;
+    }
+    
+}
+
+.branding:hover {
+    color: $primary;
+    background-color: transparent;
+}
+
+a,
+a:hover, 
+a:active, 
+a:focus,
+input::-moz-focus-inner { 
+    outline: 0;
+    border: 0; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+pre {
+    font-family: monospace;
+    font-size: .75em;
+    line-height: 1.5;
+    padding: .5rem;
+    background: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+code {
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}    
+
+ul {
+    padding-left: 1rem;
+    list-style: none;
+
+    li {
+        margin-top: .25rem;
+    }
+}
