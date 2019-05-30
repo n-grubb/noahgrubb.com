@@ -117,6 +117,7 @@ nav {
 
     .post-title {
         font-size: 2.5rem;
+        margin-bottom: 0;
     }
 
     .post-excerpt,
@@ -156,6 +157,7 @@ nav {
 
 .single {
     margin-top: 2rem;
+    animation: bounce_content 1s 1;
 }
 
 article a {

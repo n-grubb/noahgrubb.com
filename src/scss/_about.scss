@@ -3,7 +3,6 @@
         transform: translate(-10%,-100%) skewY(-2deg);
     }
     40% {
-        // transform: translate(0,0) skewY(-2deg);
         transform: skewY(-3deg);
     }
     60% {
@@ -17,26 +16,18 @@
     }
 }
 
-#about-me {
+.about-me {
     margin-top: 1rem;
     position: relative;
     animation: bounce_content 1s 1;
 
     display: grid; 
-    grid-template: auto / 1fr 1fr;
+    grid-template: auto / 1fr;
 
     .u-photo {
-        grid-column: 1;
+        max-width: 350px;
         border-radius: 4px;
-    }
-    
-    .intro {
-        grid-column: 2;
-        margin-left: 1rem;
-    }
-    
-    .details {
-        grid-column: 1 / span 2;
+        margin-bottom: 1rem;
     }
 
     hgroup {
@@ -49,3 +40,20 @@
 
 }
 
+@media (min-width: 700px) {
+    .about-me { 
+        grid-template: auto / 1fr 1fr;
+        .u-photo {
+            max-width: 100%;
+            grid-column: 1;
+            margin-bottom: 0;
+        }
+        .intro {
+            grid-column: 2;
+            margin-left: 1rem;
+        }
+        .details {
+            grid-column: 1 / span 2;
+        }
+    }
+}

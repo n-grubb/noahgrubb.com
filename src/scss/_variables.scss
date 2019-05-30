@@ -18,7 +18,7 @@ $inner-max: 768px;
 $content-max: 612px;
 
 /* breakpoints */
-$tablet: 500px;
-$laptop: 768px;
-$desktop: 1050px;
+$bp-narrow: "(min-width: 500px)";
+$bp-mid:    "(min-width: 700px)";
+$bp-wide:   "(min-width: 1050px)";
 $xl: 1440px; 
