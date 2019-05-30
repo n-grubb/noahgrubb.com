@@ -80,7 +80,7 @@ nav {
     padding-left: 0;
     margin-top: 2rem;
 
-    li {
+    > li {
         list-style: none;
         margin-top: 5rem;
 
@@ -115,7 +115,7 @@ nav {
 
     .post-title {
         font-size: 2.5rem;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     .post-excerpt,
@@ -127,14 +127,37 @@ nav {
         margin-bottom: .25rem;
     }
 
-    ul, ol, dl {
+    ol, dl {
         padding-left: 1rem;
         margin-bottom: 1rem;
+    }
+
+    ul {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        list-style: none;
+
+        border: 1px solid rgba(0,0,0,.10);
+        border-radius: 6px;
+        
+        li {
+            list-style-position: inside;
+            padding-left: 1em;
+            text-indent: -.5em;
+
+            &::before {
+                display: inline-block;
+                content: "•"; 
+                color: $primary;
+                margin-right: .5rem;
+            }
+        }
     }
 
     blockquote {
         border-left: 3px solid $bold;
         padding-left: 1rem;
+        margin: 0;
     }
 
     a {    
