@@ -11,7 +11,7 @@ Is it an app?
 Is it.. not an app? 
 > "Must be a WordPress site." 
 
-I believe it is the role of web developers to prevent sites to conform to one of two molds. Maybe I should keep my mouth shut as someone who makes a living as a WordPress expert, but WordPress is not necessary for all sites. React is not necessary for <abbr title="Progressive Web Apps">PWAs</abbr>. 
+I believe it is the duty of web developers to prevent sites to conform to one of two molds. Maybe I should keep my mouth shut as someone who makes a living as a WordPress expert, but WordPress is not necessary for all sites. React is not necessary for <abbr title="Progressive Web Apps">PWAs</abbr>. 
 
 The decision to use a certain technology is a nuanced one for each site. The solution should be tailored to the problem. Before the decision to utilize a certain framework, CMS or technology is used we should first think about the constraints. Here are just a few questions I think about when beginning a project:
 * Who is the audience? 
