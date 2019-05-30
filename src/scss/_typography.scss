@@ -1,3 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background-color: $primary;
+    color: $page-bg;
+}
+::selection {
+    background-color: $primary;
+    color: $page-bg;
+}
+
 html {
     font-family: $serif;
     font-size: 20px;
@@ -8,10 +22,10 @@ body {
     background-color: $page-bg;
 }
 
-
 h1,h2,h3,h4,h5,h6 {
     color: $bold;
     margin: 0;
+    padding: 0;
 }
 
 p {
@@ -83,6 +97,8 @@ code {
 }    
 
 ul {
+    margin: 0;
+    padding: 0;
     padding-left: 1rem;
     list-style: none;
 

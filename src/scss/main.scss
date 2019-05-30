@@ -1,19 +1,4 @@
 @import 'variables';
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-::-moz-selection {
-    background-color: $primary;
-    color: $page-bg;
-}
-::selection {
-    background-color: $primary;
-    color: $page-bg;
-}
-
 @import 'typography';
 
 main,
