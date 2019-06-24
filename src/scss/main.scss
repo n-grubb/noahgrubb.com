@@ -45,9 +45,9 @@ nav {
     margin-bottom: 2rem;
     padding-top: .75rem;
     border-top: 3px solid $text;
-    transform: skewY(2deg);
     font-size: .75em;
     color: $fade;
+    animation: skew_to_right .4s 1.2s 1 forwards;
 
     a {
         color: $fade;
@@ -161,7 +161,7 @@ nav {
 
 .single {
     margin-top: 2rem;
-    animation: bounce_content 1s 1;
+    animation: fade_and_slide 1s 1;
 }
 
 article a {

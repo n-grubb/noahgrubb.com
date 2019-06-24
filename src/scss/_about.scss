@@ -16,16 +16,36 @@
     }
 }
 
+@keyframes fade_and_slide {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes skew_to_right {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: skewY(2deg);
+    }
+}
+
+
 .about-me {
     margin-top: 1rem;
     position: relative;
     animation: bounce_content 1s 1;
-
     display: grid; 
     grid-template: auto / 1fr;
 
     .u-photo {
-        max-width: 350px;
+        max-width: 100%;
         border-radius: 4px;
         margin-bottom: 1rem;
     }
@@ -39,13 +59,21 @@
     }
 
 }
+@media ($bp-narrow) {
+    .about-me { 
+        .u-photo {
+            max-width: 350px;
+            margin: 0 auto 1rem;
+        }
+    }
+}
 
-@media (min-width: 700px) {
+@media ($bp-mid) {
     .about-me { 
         grid-template: auto / 1fr 1fr;
         .u-photo {
-            max-width: 100%;
             grid-column: 1;
+            margin: 0 0 1rem;
         }
         .intro {
             grid-column: 2;
