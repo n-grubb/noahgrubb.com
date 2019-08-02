@@ -130,6 +130,7 @@
 
         a {
             color: black;
+            font-family: $display;
             font-size: .75em;
             margin-right: 5px;
 
@@ -144,6 +145,14 @@
             }
         }        
     }
+}
+
+.projects h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #263c50;
+    background-color: #e9f6fd;
+    padding: .5rem;
 }
 
 .projects-secondary {

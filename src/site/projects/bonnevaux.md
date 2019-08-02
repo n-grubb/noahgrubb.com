@@ -14,7 +14,7 @@ Bonnevaux is the international meditation and retreat centre of the <a href="htt
 
 <h3><span>Challenge:</span>Gutenberg</h3>
 
-The vision for the site encompasses different phases over the next few years as the centre becomes more and more operational. Because of this, we wanted to build this site in an especially forward-thinking manner and that meant utilizing the new <a href="https://wordpress.org/gutenberg/" target="_blank">Gutenberg editor</a>. Being Design thoughtfully crafted a design system and I created custom Gutenberg blocks to implement it. This ended up being quite the challenge since creating Gutenberg blocks doesn't have great documentation. However, I think we knocked it out of the part. Gutenberg excels when paired with a design system, it allows you to think about a design in the same way. Our blocks are used around the site to create a feeling of unity through all of the site's content. 
+The vision for the site encompasses different phases over the next few years as Bonnevaux Centre becomes more and more operational. Because of this, we wanted to build this site in an especially forward-thinking manner and that meant utilizing the new <a href="https://wordpress.org/gutenberg/" target="_blank">Gutenberg editor</a>. Being Design thoughtfully crafted a design system and I created custom Gutenberg blocks to implement it. This ended up being quite the challenge since documentation was still sparse around creating Gutenberg blocks. Working with Gutenberg requires a different way of looking at WordPress development. We found that Gutenberg reallyexcels when paired with a design system, it allows you to think about a design in the same way. Our blocks are used around the site to create a feeling of unity through all of the site's content. 
 
 <figure class="screenshot rotating-images">
     <img src="/images/bv-contentblock-wide.png" title="A custom Gutenberg block for displaying content, on wide screens" alt="A custom Gutenberg block for displaying content, on wide screens" />
@@ -41,18 +41,18 @@ The vision for the site encompasses different phases over the next few years as 
     }, 2000);
 </script>
 
-This content block above is a great example, and a block we are particularly proud of. It looks great on all screen sizes and is really versatile for us to be used many times on the site through different block options. 
+This content block above is a great example, and a block we are particularly proud of. It looks great on all screen sizes and is really versatile for us to be used many times on the site through various block options. 
 
 <figure class="screenshot feature">
     <img src="/images/bv-donation-pages.png" title="A donation page on the Bonnevaux site" alt="A donation page on the Bonnevaux site" />
     <figcaption>A donation page on the Bonnevaux site. <a href="https://bonnevauxwccm.org/donation/retreat-center/" target="_blank">See the full page</a></figcaption>
 </figure>
 
-The Gutenberg editor has allowed us to pass alot of control to the site editors. Using Gutenberg and the blocks we created, our editors have created beautiful donation pages for the different areas of the center that users can contribute to.
+The Gutenberg editor has allowed us to pass a ton of control to the site editors. Using Gutenberg and the blocks we created, our editors have created beautiful donation pages for the different areas of the center that users can contribute to.
 
 <h3><span>Challenge:</span>Multilingual</h3>
 
-The <abbr title="World Community for Christian Meditation">WCCM</abbr> is a global organization which means people with many different language preferences will be viewing the site. We wanted to make sure that the site was built with full translation support. In all of our templates, I utilized the WordPress <a href="https://codex.wordpress.org/Function_Reference/_2" target="_blank">translation function</a> namespaced to our theme. 
+Because The <abbr title="World Community for Christian Meditation">WCCM</abbr> is a global organization, it is inevitable that people with many different language preferences will be viewing the site. We wanted to make sure that the site was built with full translation support. In all of our templates, I utilized the WordPress <a href="https://codex.wordpress.org/Function_Reference/_2" target="_blank">translation function</a> namespaced to our theme. 
 
 ex: `__( 'Facilitator', 'bonnevaux' );` 
 

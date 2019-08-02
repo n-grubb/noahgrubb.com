@@ -12,7 +12,7 @@ description: Implemented a redesign of Seth Godin's marketing blog, one of the m
 ### Project Overview: 
 The primary goal of this project was to refresh Seth's long-running and very popular marketing blog. I teamed up with Seth's art director, [Alex Peck](https://alxpck.com/), to implement a redesign for the blog. I created a completely custom theme to accomodate the new design and a handful of plugins for a variety of new features.
 
-The blog was previously built on Typepad but Seth decided it was time to move it to a more modern platform. We created a new site architecture and developed a plan to migrate all of the old content over to the WordPress site.
+The blog was previously built on Typepad, but Seth decided it was time to move it to a more modern platform. We created a new site architecture and developed a plan to migrate all of the old content over to the WordPress site.
 
 <h3><span>Challenge:</span>"Star the Post"</h3>
 
@@ -21,9 +21,9 @@ The blog was previously built on Typepad but Seth decided it was time to move it
     <figcaption>The Star the Post Animation</figcaption>
 </figure>
 
-One of the new features we wanted to add was a piece of functionality similar to Medium's applause button. This button will allow users to give positive feedback on posts that resonated with them. I worked with Alex to design a simple animation to accompany this feature. We wanted to keep it super simple to align with the rest of the design so  we ended up landing on a "pop" animation. 
+One of the new features we wanted to add was a piece of functionality similar to Medium's applause button. This button allows users to give positive feedback on posts that resonate with them. I worked with Alex to design a simple animation to accompany this feature. We wanted to keep it quite simple to align with the rest of the design so  we ended up landing on a "pop" animation. 
 
-<p class="clearit">The star counts update in semi-real time using the WordPress heartbeat API. Every 15 seconds a post will receive the updated count from the server and display that. The challenge here is that we needed to always display the accurate count but also keep the experience snappy for our users. We didn't want the animation to wait to play until we received a response from the server. Our solution: we update the counts immediately and then send the update to the server. When the heartbeat api sends a new response, we refresh the count with the authorative number from the api response.</p>
+<p class="clearit">The star count updates in semi-real time using the WordPress heartbeat API. Every 15 seconds, a post receives the updated count from the server and display that. The challenge here was that we needed to always display the accurate count but also keep the experience snappy for our users. We didn't want the animation to wait to play until we received a response from the server. Our solution: we update the count immediately and then send the update to the server. When the heartbeat api sends a new response, we refresh the count with the authorative number from the api response.</p>
 
 We identified that users who "star" a post are more likely to share the post on social media. This prompted us to then add a short animation that directs a user's attention to the social media icons after the star animation plays.  
 
@@ -32,7 +32,7 @@ We identified that users who "star" a post are more likely to share the post on 
     <figcaption>The Star the Post Social Animation</figcaption>
 </figure>
 
-Now we can put this to data to use and use our star counts within an internal algorithm to rank blog posts. This required setting up a custom database table to store information and adding tracking to certain user interactions with the site such as page views and social shares. How we calculate this has changed over time but our equation looks something like this: 
+We put this to data to use and used our star counts within an internal algorithm to rank blog posts. This required setting up a custom database table to store information and adding tracking to certain user interactions with the site such as page views and social shares. How we calculate this has changed over time but our equation looks something like this: 
 
 ```
 Star Count = ( post views / 7 ) + ( star clicks * 1 ) + ( social shares * 7 )
@@ -60,7 +60,7 @@ Another feature we added was something we called Notifications. We created a pos
     </figure>
 </div>
 
-We did not want this notification to show if a user has already seen the News post. So we used cookies to do this. We keep track of the post-id of the latest news post. On the first page view, the notification will not show as we want the content to make the first impression. After the first page view, the notification will appear if we determine a user has not seen the post that matches that id. We determine that by setting a cookie that holds the id of the last seen notification post. If a user visits the notifications page or visits the latest the news post, the id of the latest post will be set and the notification alert will no longer appear for that visitor. 
+We did not want this notification to show if a user has already seen the News post. So we used cookies to do this. We keep track of the post-id of the latest news post. On the first page view, the notification will not show as we want the content to make the first impression. After the first page view, the notification will appear if we determine a user has not seen the post that matches that id. We are able to determine if a user has seen the post by setting a cookie that holds the id of the last seen notification post. If a user visits the notifications page or visits the latest news post, the id of the latest post will be set and the notification alert will no longer appear for that visitor. 
 
 <h3><span>Challenge:</span>Unique Share Images</h3>
 
@@ -74,7 +74,7 @@ When a user shares a post, we wanted to serve a nice image that accompanies the 
     <figcaption>Some of Seth's Social Sharing Images</figcaption>
 </figure>
 
-To accomplish this, I created an image category for media uploaded via the WordPress media manager. Under this category, we uploaded a handful of nice images to be used on social sites. When a post is published, we check to see if an image has been set and if not, use one of the images from our custom category. 
+To accomplish this, I created an image category for media uploaded via the WordPress media manager. Under this category, we uploaded a handful of nice images to be used on social sites. When a post is published, we check to see if an image has been set and if not, use one of the images from our custom category. The image is saved to that post as metadata so that it will be consistent going forward. 
 
 ### Launch
 There really is no margin for error on launching a site with this large of an audience. Lucky for us, we worked with the great team at [WordPress VIP](https://wpvip.com/) to seamlessly launch the new site with no issues for Seth's readers. 
