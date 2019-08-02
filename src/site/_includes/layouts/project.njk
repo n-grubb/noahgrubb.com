@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="single-project {{ slug }}">
+
+  <header>
+    <h1 class="project-title">{{ title }}</h1>
+    <p class="project-description">{{ description }}</p>
+  </header>
+  
+  <section class="post-content">
+    {{ content | safe }}
+  </section>
+
+</article>

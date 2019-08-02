@@ -1,18 +1,30 @@
 @keyframes bounce_content {
     0% {
-        transform: translate(-10%,-100%) skewY(-2deg);
+        transform: translate(-10%,-100%) rotate(-2deg);
     }
     40% {
-        transform: skewY(-3deg);
+        transform: rotate(-3deg);
     }
     60% {
-        transform: skewY(2.5deg);
+        transform: rotate(2.5deg);
     }
     80% {
-        transform: skewY(-2deg);
+        transform: rotate(-2deg);
     }
     100% {
         transform: none;
+    }
+}
+
+
+@keyframes fade_and_slide_less {
+    0% {
+        transform: translateY(-25%);
+        opacity: .5;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
     }
 }
 
@@ -27,20 +39,28 @@
     }
 }
 
-@keyframes skew_to_right {
+@keyframes knock_right {
     0% {
         transform: none;
     }
     100% {
-        transform: skewY(2deg);
+        transform: rotate(2deg);
     }
 }
 
+@keyframes knock_left {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
 
 .about-me {
     margin-top: 1rem;
     position: relative;
-    animation: bounce_content 1s 1;
+    animation: fade_and_slide .75s 1;
     display: grid; 
     grid-template: auto / 1fr;
 
@@ -48,36 +68,146 @@
         max-width: 100%;
         border-radius: 4px;
         margin-bottom: 1rem;
+        max-height: 60vh;
+
+        @media screen and (min-width: 400px) {
+            max-height: none;
+        }
     }
 
     hgroup {
         margin-bottom: .75rem;
+        line-height: 1.15;
     }
-
-    p, li {
+ 
+    li {
         font-size: .85em;
     }
 
+    h4 {
+        margin-top: 3em;
+        font-size: .75em;
+        font-family: $sans-serif;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        margin-top: 3em;
+        font-family: $sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        & + p {
+            margin-top: .25em;
+        }
+    }
+
+    .link-list {
+        padding-left: 0;
+        margin-bottom: 3em;
+        p {
+            font-size: 1.5em;
+        }
+    }
 }
-@media ($bp-narrow) {
+
+.availability {
+    position: relative;
+    border-radius: 4px;
+    padding: .75em;
+    margin: 3em auto 2em;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #d7e7f2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #add8f6;
+        animation: knock_left .5s 1.2s 1 forwards;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .box-title {
+        position: absolute;
+        top: -1.65em;
+        left: 0;
+
+        font-size: .75em;
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        // transform: rotate(2deg);
+    }
+
+    p {
+        font-size: .85em;
+        color: black;
+        margin: 0 0 .5em;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    mark, a {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    a {
+        // background-color: $primary;
+        // background-color: #d7e7f2;
+        // border-radius: 2px;
+        // padding: .25em .5em;
+        line-height: 1;
+        font-weight: bold;
+        color: black;
+        // box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+        // animation: knock_left .5s 1.2s 1 forwards;
+
+        &:hover {
+            text-decoration: underline;
+            // color: black;
+            // box-shadow: 1px 1px 5px rgba(0,0,0,.15);
+        }
+    }
+
+    .contact-line {
+        font-size: .75em;
+    }
+}
+
+
+@media screen and ($bp-narrow) {
     .about-me { 
         .u-photo {
-            max-width: 350px;
             margin: 0 auto 1rem;
         }
     }
 }
 
-@media ($bp-mid) {
+@media screen and ($bp-mid) {
     .about-me { 
         grid-template: auto / 1fr 1fr;
         .u-photo {
             grid-column: 1;
-            margin: 0 0 1rem;
+            // margin: 0 0 1.5rem;
         }
         .intro {
             grid-column: 2;
-            margin-left: 1rem;
+            margin-left: 1.5rem;
         }
         .details {
             grid-column: 1 / span 2;

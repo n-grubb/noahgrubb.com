@@ -1,0 +1,165 @@
+.single-project {
+    animation: fade_and_slide_less 1s 1;
+
+    header {
+        margin: 3rem 0;
+    }
+
+    .project-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-description {
+        padding: 0 5%;
+        font-size: .9em;
+        text-align: center;
+
+        @media screen and ($bp-narrow) {
+            padding: 0 10%;
+        }
+
+        @media screen and ($bp-wide) {
+            padding: 0 20%;
+        }
+    }
+
+    figure.feature {
+        margin-left: -1rem;
+        margin-right: -1rem; 
+        padding: 1rem;
+
+        img {
+            border: 2px solid black;
+        }
+
+        @media screen and ($bp-narrow) {
+            padding: 3rem;
+        }
+
+        @media screen and ($bp-mid) {
+            margin-left: -4rem;
+            margin-right: -4rem;           
+        }
+    }
+
+    figcaption {
+        margin-top: .5rem;
+        font-family: sans-serif;
+        font-size: .65em;
+        text-align: right;
+        color: rgba(0,0,0,.7);
+    }
+
+    .screenshot {
+        padding: 2rem;
+        margin: 2rem -1rem;
+        text-align: center;
+
+        figcaption {
+            text-align: center;
+        }
+
+        &.full {
+            padding: 1rem;
+            text-align: center;
+
+            figcaption {
+                text-align: right;
+            }
+        }
+
+        @media screen and ($bp-mid) {
+            &.stp-thumb {
+                margin: .5rem 0 2rem 1rem;
+                float: right;
+            }
+
+            &.full {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+
+    h3 {
+        position: relative;
+        margin-top: 3rem;
+        padding: .75rem .5rem;
+        clear: both;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: .5em;
+            letter-spacing: .5px;
+            color: $primary;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            left: 0;
+            background-color: #e9f6fd;
+            
+            z-index: -1;
+        }
+    }
+
+    .screenshot-grid {
+        display: grid;
+        grid-template: auto / 1fr;
+        max-width: 100%;
+        margin: 2rem -1rem;
+
+        figure {
+            width: 100%;
+            padding: 1rem;
+            margin: 0 0 1rem;
+        }
+
+        @media screen and ($bp-mid) {
+            grid-template: auto / 1fr 1fr;
+            margin: 2rem 0;
+
+            figure {
+                width: auto;
+                margin: 1rem 1rem 0 0;
+            }
+        }
+    }
+}
+
+.rotating-images {
+    img {
+        display: none;
+        margin: 0 auto;
+
+        &:first-of-type {
+            display: block;
+        }
+    }
+}
+
+.seth-godin {
+    figure {
+        background-color: rgba(253, 184, 19, .5);
+    }   
+}
+
+.bonnevaux {
+    figure {
+        background-color: rgba(253, 184, 19, .5);
+    }   
+}
+
+.edgeworx {
+    figure {
+        background-color: rgba(94, 113, 231, .5);
+        // background-color: rgba(255, 88, 93, .5);
+    }   
+}

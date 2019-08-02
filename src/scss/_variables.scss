@@ -7,10 +7,10 @@ $text:      #333333;
 $bold:      #000000;
 $fade:      #7d7d7d;
 
-
 /* fonts */
 $serif: 'Arvo', serif;
-$sans-serif: "Roboto", sans-serif;
+$sans-serif: "Montserrat", sans-serif;
+$display: "Heebo", sans-serif;
 
 /* container widths */ 
 $site-max: 1240px;
@@ -18,7 +18,7 @@ $inner-max: 768px;
 $content-max: 612px;
 
 /* breakpoints */
-$bp-narrow: "(min-width: 500px)";
-$bp-mid:    "(min-width: 700px)";
-$bp-wide:   "(min-width: 1050px)";
+$bp-narrow: "min-width: 500px";
+$bp-mid:    "min-width: 700px";
+$bp-wide:   "min-width: 1050px";
 $xl: 1440px; 

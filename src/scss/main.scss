@@ -2,15 +2,14 @@
 @import 'typography';
 
 main,
-#site-header,
-#site-footer {
-    max-width: 32rem;
-    padding: 1rem;
+.site-header,
+.site-footer {
+    max-width: 45rem;
     margin: auto;
+    padding: 1rem;
 }
 
 nav {
-
     ul {
         display: flex;
         justify-content: flex-end;
@@ -24,37 +23,78 @@ nav {
     }
 }
 
-#site-header {
-    margin-top: 1em;
+.site-header {
     display: grid;
-    grid-template: 1fr / 1fr 3fr;
-
+    grid-template: 1fr / 2fr 3fr;
+    padding: .5rem;
+    margin-top: .5rem;
+   
     nav {
         grid-column: 2;
-        font-size: .85em;
+        font-size: .65em;
+        align-self: end;
+
+        ul {
+            padding-left: 0;
+            padding-bottom: .10em;
+        }
+
+        a {
+            font-weight: normal;
+        }
+    }
+
+    .fullname {
+        font-weight: normal;
+        font-size: .6em;
+    }
+
+    @media screen and ($bp-narrow) {
+        margin-top: 1em;
+        padding: 1rem;
+        nav {
+            font-size: .85em;
+            ul {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    @media screen and ($bp-mid) {
+        grid-template: 1fr / 1fr 3fr;
+    }
+
+}
+
+
+main > article {
+    margin-top: 1rem;
+
+    @media screen and ($bp-narrow) {
+        margin-top: 2rem;
     }
 }
 
-#site-footer {
+.site-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     padding-top: .75rem;
     border-top: 3px solid $text;
     font-size: .75em;
     color: $fade;
-    animation: skew_to_right .4s 1.2s 1 forwards;
+    animation: knock_right .5s 1.2s 1 forwards;
 
     a {
         color: $fade;
+    }
 
-        &:hover {
-            color: white;
-        }
+    @media screen and ($bp-narrow) {
+        margin-bottom: 2rem;
     }
 }
 
@@ -63,8 +103,9 @@ nav {
 }
 
 .post-list {
-    padding-left: 0;
-    margin-top: 2rem;
+    width: 32rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
 
     > li {
         list-style: none;
@@ -77,6 +118,7 @@ nav {
 }
 
 .post {
+
     .post-date {
         font-size: .8em;
         color: $fade;
@@ -152,28 +194,19 @@ nav {
         }
 
         &:hover {
-            color: white;
-            background-color: $primary;
+            color: $primary;
         }
     }
 
 }
 
 .single {
-    margin-top: 2rem;
+    width: 32rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
     animation: fade_and_slide 1s 1;
 }
 
-article a {
-    color: $primary;
-
-    &:visited, &:active {
-        color: $primary;
-    }
-
-    &:hover {
-        color: white;
-    }
-}
-
 @import 'about';
+@import 'work';
+@import 'project';

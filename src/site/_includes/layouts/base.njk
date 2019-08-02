@@ -9,7 +9,7 @@
     <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
     <link rel="microsub" href="https://aperture.p3k.io/microsub/311">
 
-    <title>{{ title }} | n_</title>
+    <title>{{ title }} | Noah Grubb</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Noah Grubb's corner of the web. Experiments, thoughts and ramblings on the state of the web.{%- endif -%}"/>
     
     <link href="https://twitter.com/noahgrubb" rel="me">
@@ -27,20 +27,26 @@
     <!-- <meta name="twitter:image" content=""> -->
     #}
 
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:300,400,500,700|Heebo:300,400,500,700&display=swap" rel="stylesheet"> 
     <style>{% include "css/main.css" %}</style>
     {#<link rel="alternate" href="/feed.xml" title="{{ site.title }}" type="application/atom+xml">#}
 </head> 
 <body>  
 
-    <header id="site-header">
+    <header class="site-header">
 
-        <a href="/" class="branding" title="Home">n_</a>
+        <a href="/" class="branding" title="Home">n_ | <span class="fullname">noah grubb</span></a>
 
         <nav id="site-nav">
             <ul>
                 <li>
-                    <a href="/about">about</a>
+                    <a href="/">about</a>
+                </li>
+                <li>
+                    <a href="/work">work</a>
+                </li>
+                <li>
+                    <a href="/blog">blog</a>
                 </li>
             </ul>
         </nav>
@@ -48,12 +54,10 @@
     </header>
 
     <main>
-        
         {{ content | safe }}
-
     </main>
 
-    <footer id="site-footer">
+    <footer class="site-footer">
         <div class="copyright">
             &copy;2019 noahgrubb.com
         </div>
