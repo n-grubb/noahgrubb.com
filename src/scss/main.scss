@@ -40,12 +40,16 @@ nav {
         }
 
         a {
-            font-weight: normal;
+            font-family: $sans-serif;
         }
     }
 
-    .fullname {
+    .branding {
+        font-family: $serif;
         font-weight: normal;
+    }
+
+    .fullname {
         font-size: .6em;
     }
 
@@ -143,11 +147,14 @@ main > article {
 
         &:hover {
             background-color: transparent;
-
             .post-title {
-                color: white;
-                background-color: $primary;
+                color: $primary;
             }
+
+            // .post-title {
+            //     color: white;
+            //     background-color: $primary;
+            // }
         }
     }
 
@@ -190,22 +197,9 @@ main > article {
     }
 
     blockquote {
-        border-left: 3px solid $bold;
+        border-left: 3px solid $secondary;
         padding-left: 1rem;
         margin: 0;
-    }
-
-    a {    
-        color: $primary;
-
-        &:visited, 
-        &:active {
-            color: $primary;
-        }
-
-        &:hover {
-            color: $primary;
-        }
     }
 
 }
