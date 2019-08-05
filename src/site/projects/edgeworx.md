@@ -11,7 +11,7 @@ description: A top-of-the-line brochure site on a custom CMS and a documentation
 
 ### Project Overview:
 
-Edgeworx is an Eclipse-backed startup that created a platform for edge computing. I developed their brochure site and contributed to the development of the documentation site for their platform ioFog. I worked with a very talented UI/UX designer, <a href="https://www.anamedina.design" target="_blank">Ana Medina</a>, throughout this project and was tasked with bringing her designs to life. 
+Edgeworx is an Eclipse-backed startup that created a platform for <a href="https://en.wikipedia.org/wiki/Edge_computing" target="_blank">edge computing</a>. I developed their brochure site and contributed to the development of the documentation site for their platform ioFog. I worked with a very talented UI/UX designer, <a href="https://www.anamedina.design" target="_blank">Ana Medina</a>, throughout this project and was tasked with bringing her designs to life. 
 
 <h3><span>Challenge:</span>Propreitary CMS</h3>
 
@@ -27,7 +27,7 @@ The major challenge of this project was utilizing a completely custom PHP-based 
 To add some wow-factor to the site, I was responsible for adding an interactive slider to display microservices that could be used with Edgeworx's software. When a user hovers over a microservice, the slider must pause so that the box can be more easily read. This was a fun interactive challenge to tackle and I'm very happy with the end result.
 
 <figure class="screenshot feature">
-    <video src="/images/ew-microservices.mp4" title="A video of the Microservices Slider" alt="A video of the Microservices Slider" controls  />
+    <video src="/images/ew-microservices.mp4" title="A video of the Microservices Slider" alt="A video of the Microservices Slider" controls />
     <figcaption>Microservices slider in action</figcaption>
 </figure>
 
@@ -36,22 +36,22 @@ To add some wow-factor to the site, I was responsible for adding an interactive 
 I also had the privelege of working with the team at <a href="https://www.thisdot.co/" target="_blank">This Dot</a> to create a documentation site for the ioFog application. We wanted to use Markup to write the documentation since this project is open-source and other developers will need to contribute to it. We saw this as a great opportunity to give <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> a try. Using Gatsby, we created the brochure portion of the site and combined it with the markup driven documenation resource. 
 
 <figure class="screenshot feature">
-    <img src="/images/iofog-hp.png" title="The Edgeworx Homepage" alt="A screenshot of the Edgeworx homepage" />
-    <figcaption>The Edgeworx homepage</figcaption>
+    <img src="/images/iofog-hp.png" title="The ioFog Homepage" alt="A screenshot of the ioFog homepage" />
+    <figcaption>The ioFog homepage</figcaption>
 </figure>
 
 <figure class="screenshot feature">
-    <img src="/images/iofog-doc.png" title="The Edgeworx Homepage" alt="A screenshot of the Edgeworx homepage" />
-    <figcaption>The Edgeworx homepage</figcaption>
+    <img src="/images/iofog-doc.png" title="The ioFog documentation area" alt="A screenshot of the ioFog documentation area homepage" />
+    <figcaption>The ioFog documentation area</figcaption>
 </figure>
 
 <div class="screenshot-grid">
     <figure class="screenshot">
-        <img src="/images/ew-mobile.png" title="A screenshot of the Edgeworx site on mobile" alt="A screenshot of the Edgeworx site on mobile" />
+        <img src="/images/ew-mobile.png" title="A screenshot of the Edgeworx site on a mobile device" alt="A  screenshot of the Edgeworx site on a mobile device" />
         <figcaption>The Edgeworx homepage on mobile</figcaption>
     </figure>
     <figure class="screenshot">
-        <img src="/images/iofog-mobile.png" title="The Edgeworx Homepage" alt="A screenshot of the Edgeworx homepage" />
-        <figcaption>The Edgeworx homepage</figcaption>
+        <img src="/images/iofog-mobile.png" title="A screenshot of the ioFog site on a mobile device" alt="A screenshot of the ioFog site on a mobile device" />
+        <figcaption>The ioFog homepage on mobile</figcaption>
     </figure>
 </div>
