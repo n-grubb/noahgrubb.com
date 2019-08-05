@@ -11,7 +11,7 @@ description: A top-of-the-line brochure site on a custom CMS and a documentation
 
 ### Project Overview:
 
-Edgeworx is an Eclipse-backed startup that created a platform for edge computing. I developed their brochure site and contributed to the development of the documentation site for their platform ioFog. I worked with a very talented UI/UX designer, <a href="https://www.anamedina.design" target="_blank">Ana Medina</a>, on this project and was tasked with bringing her designs to life. 
+Edgeworx is an Eclipse-backed startup that created a platform for edge computing. I developed their brochure site and contributed to the development of the documentation site for their platform ioFog. I worked with a very talented UI/UX designer, <a href="https://www.anamedina.design" target="_blank">Ana Medina</a>, throughout this project and was tasked with bringing her designs to life. 
 
 <h3><span>Challenge:</span>Propreitary CMS</h3>
 

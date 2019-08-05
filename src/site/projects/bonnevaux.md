@@ -1,7 +1,7 @@
 ---
 title: Bonnevaux Centre for Peace
 slug: bonnevaux
-description: A hand-crafted digital experience to support the meditation center's fundraising intiative's and event booking.
+description: A hand-crafted digital experience to support the meditation center's fundraising intiatives and event booking.
 ---
 
 <figure class="feature">
@@ -10,11 +10,11 @@ description: A hand-crafted digital experience to support the meditation center'
 </figure>
 
 ### Project Overview: 
-Bonnevaux is the international meditation and retreat centre of the <a href="http://wccm.org/">The World Community for Christian Meditation</a>. The retreat centre is now open but much of the grounds are still under construction. The <abbr title="World Community for Christian Meditation">WCCM</abbr> wanted to create a site to support fundraising efforts for the center as well as the events that are starting to take place there. The <abbr title="World Community for Christian Meditation">WCCM</abbr> enlisted <a href="https://being.design/" target="_blank">Being Design</a>'s help with this and I was drafted to run the technical side of things. 
+Bonnevaux is the international meditation and retreat centre of the <a href="http://wccm.org/">The World Community for Christian Meditation</a>. The retreat centre is now open, but much of the grounds are still under construction. The <abbr title="World Community for Christian Meditation">WCCM</abbr> wanted to create a site to support fundraising efforts for the center as well as the events that are starting to take place there. The <abbr title="World Community for Christian Meditation">WCCM</abbr> enlisted <a href="https://being.design/" target="_blank">Being Design</a>'s help with this, and I was drafted to run the technical side of things. 
 
 <h3><span>Challenge:</span>Gutenberg</h3>
 
-The vision for the site encompasses different phases over the next few years as Bonnevaux Centre becomes more and more operational. Because of this, we wanted to build this site in an especially forward-thinking manner and that meant utilizing the new <a href="https://wordpress.org/gutenberg/" target="_blank">Gutenberg editor</a>. Being Design thoughtfully crafted a design system and I created custom Gutenberg blocks to implement it. This ended up being quite the challenge since documentation was still sparse around creating Gutenberg blocks. Working with Gutenberg requires a different way of looking at WordPress development. We found that Gutenberg reallyexcels when paired with a design system, it allows you to think about a design in the same way. Our blocks are used around the site to create a feeling of unity through all of the site's content. 
+The vision for the site encompasses different phases over the next few years as Bonnevaux Centre becomes more and more operational. Because of this we wanted to build this site in an especially forward-thinking manner and that meant utilizing the new <a href="https://wordpress.org/gutenberg/" target="_blank">Gutenberg editor</a>. Being Design thoughtfully crafted a design system, and I created custom Gutenberg blocks to implement it. This became quite the challenge since documentation was still sparse around creating Gutenberg blocks. Working with Gutenberg requires a different way of looking at WordPress development. We found that Gutenberg excels when paired with a design system. Our blocks are used around the site to create a feeling of unity through all of the site's content. 
 
 <figure class="screenshot rotating-images">
     <img src="/images/bv-contentblock-wide.png" title="A custom Gutenberg block for displaying content, on wide screens" alt="A custom Gutenberg block for displaying content, on wide screens" />
@@ -41,20 +41,20 @@ The vision for the site encompasses different phases over the next few years as 
     }, 2000);
 </script>
 
-This content block above is a great example, and a block we are particularly proud of. It looks great on all screen sizes and is really versatile for us to be used many times on the site through various block options. 
+This content block above is a great example and a block we are particularly proud of. It looks great on all screen sizes and is versatile enough to be used many times on the site through various block options. 
 
 <figure class="screenshot feature">
     <img src="/images/bv-donation-pages.png" title="A donation page on the Bonnevaux site" alt="A donation page on the Bonnevaux site" />
     <figcaption>A donation page on the Bonnevaux site. <a href="https://bonnevauxwccm.org/donation/retreat-center/" target="_blank">See the full page</a></figcaption>
 </figure>
 
-The Gutenberg editor has allowed us to pass a ton of control to the site editors. Using Gutenberg and the blocks we created, our editors have created beautiful donation pages for the different areas of the center that users can contribute to.
+The Gutenberg editor has allowed us to pass considerable control to the site editors. Using Gutenberg and the blocks we created, our editors have created beautiful donation pages for the different areas of the center to which users can contribute.
 
 <h3><span>Challenge:</span>Multilingual</h3>
 
-Because The <abbr title="World Community for Christian Meditation">WCCM</abbr> is a global organization, it is inevitable that people with many different language preferences will be viewing the site. We wanted to make sure that the site was built with full translation support. In all of our templates, I utilized the WordPress <a href="https://codex.wordpress.org/Function_Reference/_2" target="_blank">translation function</a> namespaced to our theme. 
+Because The <abbr title="World Community for Christian Meditation">WCCM</abbr> is a global organization, it is inevitable that people with many different language preferences will be viewing the site. Therefore, we wanted to make sure that the site was built with full translation support. In all of our templates, I utilized the WordPress <a href="https://codex.wordpress.org/Function_Reference/_2" target="_blank">translation function</a> namespaced to our theme. 
 
 ex: `__( 'Facilitator', 'bonnevaux' );` 
 
-Using this in conjuction with the <a href="https://wpml.org/" target="_blank">WordPress Multilingual Plugin</a> allowed us to create a theme where all text is available for translation. The site is currently in English and French, with plans for more languages in the near future.
+Using this in conjuction with the <a href="https://wpml.org/" target="_blank">WordPress Multilingual Plugin</a> allowed us to create a theme where all text is available for translation. The site is currently in English and French with plans for more languages in the near future.
 

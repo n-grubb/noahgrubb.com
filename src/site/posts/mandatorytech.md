@@ -3,7 +3,7 @@ title: On Mandatory Tech..
 date: 2019-05-30
 ---
 
-Over the past few years, it has seen to become an assumption that projects will be built in either WordPress or React. 
+Over the past few years, it has seemed to become an assumption that projects will be built in either WordPress or React. 
 
 Is it an app? 
 > "This needs to be done in React."

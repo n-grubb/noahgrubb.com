@@ -21,24 +21,24 @@ The blog was previously built on Typepad, but Seth decided it was time to move i
     <figcaption>The Star the Post Animation</figcaption>
 </figure>
 
-One of the new features we wanted to add was a piece of functionality similar to Medium's applause button. This button allows users to give positive feedback on posts that resonate with them. I worked with Alex to design a simple animation to accompany this feature. We wanted to keep it quite simple to align with the rest of the design so  we ended up landing on a "pop" animation. 
+One of the new features we wanted to add was a piece of functionality similar to Medium's applause button. This button allows users to give positive feedback on posts that resonate with them. I worked with Alex to design an animation to accompany this feature. We wanted to keep it quite simple to align with the rest of the design so we chose a "pop" animation. 
 
-<p class="clearit">The star count updates in semi-real time using the WordPress heartbeat API. Every 15 seconds, a post receives the updated count from the server and display that. The challenge here was that we needed to always display the accurate count but also keep the experience snappy for our users. We didn't want the animation to wait to play until we received a response from the server. Our solution: we update the count immediately and then send the update to the server. When the heartbeat api sends a new response, we refresh the count with the authorative number from the api response.</p>
+<p class="clearit">The star count updates in semi-real time using the WordPress heartbeat API. Every 15 seconds, a post receives the updated count from the server and displays that. The challenge here was that we needed to always display the accurate count but also keep the experience snappy for our users. We didn't want the animation to wait to play until we received a response from the server. Our solution: update the count immediately for that user, then send the update to the server. When the heartbeat API sends a new response, we refresh the count with the authorative number from the API response.</p>
 
-We identified that users who "star" a post are more likely to share the post on social media. This prompted us to then add a short animation that directs a user's attention to the social media icons after the star animation plays.  
+We found that users who "star" a post are more likely to share the post on social media. This prompted us to then add a short animation that directs a user's attention to the social media icons after the star animation plays.  
 
 <figure class="screenshot full">
     <img src="/images/sg-social.gif" title="The Star the Post Social Animation" alt="The Star the Post Social Animation on Seth's Blog" />
     <figcaption>The Star the Post Social Animation</figcaption>
 </figure>
 
-We put this to data to use and used our star counts within an internal algorithm to rank blog posts. This required setting up a custom database table to store information and adding tracking to certain user interactions with the site such as page views and social shares. How we calculate this has changed over time but our equation looks something like this: 
+We put this data to use and utilized our star counts within an internal algorithm to rank blog posts. This required setting up a custom database table to store information and adding tracking to certain user interactions with the site such as page views and social shares. How we calculate this has changed over time, but our equation looks something like this: 
 
 ```
 Star Count = ( post views / 7 ) + ( star clicks * 1 ) + ( social shares * 7 )
 ```
 
-You can see this in action via the "Story of the Week" that collects star counts over a 7 day period to determine the hottest article of that week. 
+You can see this in action via the "Story of the Week" page that collects star counts over a 7-day period to determine the hottest article of that week. 
 
 <figure class="screenshot feature">
     <img src="/images/story-of-the-week.png" title="A screenshot of the Story of the Week functionality" alt="A screenshot of the Story of the Week functionality" />
@@ -60,11 +60,11 @@ Another feature we added was something we called Notifications. We created a pos
     </figure>
 </div>
 
-We did not want this notification to show if a user has already seen the News post. So we used cookies to do this. We keep track of the post-id of the latest news post. On the first page view, the notification will not show as we want the content to make the first impression. After the first page view, the notification will appear if we determine a user has not seen the post that matches that id. We are able to determine if a user has seen the post by setting a cookie that holds the id of the last seen notification post. If a user visits the notifications page or visits the latest news post, the id of the latest post will be set and the notification alert will no longer appear for that visitor. 
+We did not want this notification to show if a user has already seen the latest post so we use cookies to track this. The cookies keeps track of the post ID of the latest news post. On the first page view, the notification will not display since we want the content to make the first impression. After the first page view, the notification will appear if we determine a user has not seen the post that matches that ID. If a user visits the notifications page or visits the latest news post, the ID of the latest post will be set and the notification alert will no longer appear for that visitor. 
 
 <h3><span>Challenge:</span>Unique Share Images</h3>
 
-When a user shares a post, we wanted to serve a nice image that accompanies the link. By itself, this is no challenge. But we wanted to put our own spin on this to make it easy for Seth going forward. Our goal was to have this image be chosen randomly from a group of images when a post is published. 
+When a user shares a post, we wanted to serve a nice image that accompanies the link. This is no challenge by itself, but we wanted to put our own spin on this to make it easy for Seth going forward. Our goal was to have this image be chosen randomly from a group of images when a post is published. 
 
 <figure class="screenshot rotating-images">
     <img src="/images/sg-og-image-1.jpg" title="One of Seth's Social Sharing Images" alt="One of Seth's Social Sharing Images" />

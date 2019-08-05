@@ -73,6 +73,10 @@
         @media screen and (min-width: 400px) {
             max-height: none;
         }
+
+        @media screen and (min-width: 700px) {
+            max-width: 435px;
+        }
     }
 
     hgroup {
@@ -85,14 +89,13 @@
     }
 
     h4 {
-        margin-top: 3em;
+        margin-top: 2.4em;
         font-size: .75em;
         font-family: $sans-serif;
         text-transform: uppercase;
     }
 
     h5 {
-        margin-top: 3em;
         font-family: $sans-serif;
         font-weight: bold;
         text-transform: uppercase;
@@ -209,7 +212,7 @@
         }
         .intro {
             grid-column: 2;
-            margin-left: 1.5rem;
+            margin-left: 1rem;
         }
         .details {
             grid-column: 1 / span 2;
