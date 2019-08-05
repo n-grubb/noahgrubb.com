@@ -11,9 +11,9 @@ Is it an app?
 Is it.. not an app? 
 > "Must be a WordPress site." 
 
-I believe it is the duty of web developers to prevent sites to conform to one of two molds. Maybe I should keep my mouth shut as someone who makes a living as a WordPress expert, but WordPress is not necessary for all sites. React is not necessary for <abbr title="Progressive Web Apps">PWAs</abbr>. 
+I believe it is the duty of web developers to prevent sites to conform to one of two molds. Maybe I should keep my mouth shut as someone who makes a living as a WordPress expert, but WordPress is not necessary for all sites. React is not necessary for all <abbr title="Progressive Web Apps">PWAs</abbr>. 
 
-The decision to use a certain technology is a nuanced one for each site. The solution should be tailored to the problem. Before the decision to utilize a certain framework, CMS or technology is used we should first think about the constraints. Here are just a few questions I think about when beginning a project:
+The decision to use a certain technology is a nuanced one for each site. The solution should be tailored to the problem. Before the decision to utilize a certain framework, CMS or technology is used we should think about the constraints. Here are just a few questions I think about when beginning a project:
 * Who is the audience? 
 * How complex is the site or application?
 * How many pages is the website?
@@ -29,7 +29,7 @@ And that doesn't even cover questions you should ask about each individual techn
 * Will this technology increase the complexity of the project? (hosting, deploying, development environments)
 * Will this technology cause performance issues?
 * Is the community active? Will support be hard to come by?
-* Who backs this technology? (implied reluctancy to use anything from Google or Facebook goes here..)
+* Who backs this technology?
 
 By asking these questions you might uncover that you don't need to use something as complex as React to build your web app. You might even learn that you don't need a web app at all! Maybe you learn that WordPress seems like a big solution for a site with a few pages and content that is not likely to change much. The client might be very comfortable writing HTML or markdown and not need the visual editor that is a core selling point of using a content mangement system. 
 
