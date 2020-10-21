@@ -20,7 +20,7 @@
         "luxon": "^1.11.1"
     },
     "scripts": {
-      "start": "gulp watch & eleventy --serve",
-      "build": "gulp build & eleventy"
+        "start": "gulp watch & eleventy --serve",
+        "build": "gulp build & eleventy"
     }
 }
