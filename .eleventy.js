@@ -14,6 +14,7 @@ module.exports = function(config) {
 
     // static passthroughs
     config.addPassthroughCopy("src/site/images");
+    config.addPassthroughCopy("src/site/resume.html");
 
     return {
         dir: {

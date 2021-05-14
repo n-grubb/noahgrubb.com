@@ -81,7 +81,6 @@
             align-content: start;
         }
         .details {
-            
             grid-row: 2;
             grid-column: 1 / span 6;
         }
@@ -178,6 +177,10 @@
             margin-bottom: 2em;
         }
     }
+}
+
+.resume-line a + a {
+    font-size: .75em;
 }
 
 .availability {
