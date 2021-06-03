@@ -68,7 +68,7 @@
         }
 
         @media screen and (min-width: 1000px) {
-            grid-column: 1 / 14;
+            grid-column: 1 / 12;
             height: 500px;
         }
 
@@ -87,7 +87,7 @@
         }
         
         @media screen and (min-width: 1000px) {
-            grid-column: 14 / 21;
+            grid-column: 12 / 21;
         }
     }
 
@@ -200,6 +200,21 @@
         } 
 
         
+    }
+}
+
+.blackfynn {
+    .project-thumb {
+        background-color:  #222426;
+        
+        img {
+            width: 10rem;
+            filter: invert(100%);
+        }
+    }
+
+    .project-links a:hover {
+        color:  #222426;
     }
 }
 
